@@ -3,6 +3,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .features__subtitle {
@@ -20,6 +25,9 @@
     justify-content: center;
     align-items: center;
   }
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
 }
 
 .features__list {
@@ -36,6 +44,13 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .features__item {
   width: 270px;
@@ -45,8 +60,8 @@
     width: 100%;
   }
   @media screen and (min-width: 768px) {
-    // justify-content: center;
-    // width: 100%;
+    justify-content: center;
+    width: 100%;
     flex-basis: calc((100% - 30px * (2 - 1)) / 2);
   }
 }
