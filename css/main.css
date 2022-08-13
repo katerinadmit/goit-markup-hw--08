@@ -528,7 +528,7 @@ section {
   height: 92px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -536,12 +536,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #AFB1B8;
+  color: #afb1b8;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
-  color: #2196F3;
+  color: #2196f3;
   border: 1px solid var(--accent-txt-cl);
 }
 
@@ -558,9 +558,7 @@ section {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients__item:hover .clients__logo,
-.clients__item:focus .clients__logo {
+.clients__logo:hover .clients__logo, .clients__logo:focus .clients__logo {
   fill: var(--accent-txt-cl);
 }
 
@@ -998,7 +996,7 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter__btn:hover, .filter__btn:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #2485d4;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1030,6 +1028,10 @@ section {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.project__item:hover .project__example-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
 .project__item:nth-child(3n) {
   margin-right: 0;
@@ -1037,11 +1039,6 @@ section {
 
 .project__item:nth-last-child(-n+3) {
   margin-bottom: 0;
-}
-
-.project__item:hover .project__example-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .project__foto {
@@ -1067,7 +1064,7 @@ section {
   font-size: 18px;
   line-height: 156%;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1129,7 +1126,7 @@ section {
           transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1161,7 +1158,7 @@ section {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1230,8 +1227,11 @@ section {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover, .modal-input:focus {
-  border-color: #2196F3;
-  border: 1px solid #2196F3;
+  border-color: #2196f3;
+  border: 1px solid #2196f3;
+}
+.modal-input:hover + .modal-form-icon, .modal-input:focus + .modal-form-icon {
+  fill: #2196f3;
 }
 
 .input-icon-wrap {
@@ -1250,11 +1250,6 @@ section {
   fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input:hover + .modal-form-icon,
-.modal-input:focus + .modal-form-icon {
-  fill: #2196F3;
 }
 
 .modal-comment {
@@ -1338,7 +1333,7 @@ section {
 
 .terms-link {
   text-underline-position: under;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .modal-form-terms {
@@ -1433,12 +1428,10 @@ section {
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-txt-cl);
 }
-
 .nav__link--current {
   position: relative;
   color: var(--accent-txt-cl);
 }
-
 .nav__link--current::after {
   content: "";
   position: absolute;
@@ -1447,6 +1440,6 @@ section {
   display: block;
   width: 100%;
   height: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 2px;
 }/*# sourceMappingURL=main.css.map */
