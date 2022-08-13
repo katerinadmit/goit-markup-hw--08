@@ -37,6 +37,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 30px;
 
   @media screen and (min-width: 480px) {
     width: 100%;
@@ -63,6 +64,11 @@
     justify-content: center;
     width: 100%;
     flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    width: 100%;
+    flex-basis: calc((100% - 30px * (4 - 1)) / 4);
   }
 }
 

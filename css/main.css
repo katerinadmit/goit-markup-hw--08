@@ -318,6 +318,7 @@ section {
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 30px;
 }
 @media screen and (min-width: 480px) {
   .features__list {
@@ -365,6 +366,16 @@ section {
     width: 100%;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
