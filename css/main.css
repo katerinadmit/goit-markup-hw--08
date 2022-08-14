@@ -312,9 +312,6 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -520,7 +517,7 @@ section {
 @media screen and (min-width: 480px) {
   .about__uppertitle {
     font-size: 28px;
-    line-height: 1.5;
+    line-height: 1.1785714286;
     margin-bottom: 30px;
   }
 }
@@ -535,6 +532,12 @@ section {
 }
 @media screen and (min-width: 480px) {
   .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -543,6 +546,23 @@ section {
         flex-wrap: wrap;
     gap: 30px;
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -556,6 +576,28 @@ section {
   .about__item {
     width: 100%;
   }
+}
+@media screen and (min-width: 768px) {
+  .about__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .about__name-position {
@@ -572,6 +614,11 @@ section {
   color: #212121;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 480px) {
+  .about__name-subtitle {
+    margin-bottom: 10px;
+  }
+}
 
 .about__info {
   font-weight: 400;
@@ -581,6 +628,11 @@ section {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 480px) {
+  .about__info {
+    margin: 16px;
+  }
 }
 
 .socials {
@@ -1211,6 +1263,22 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 70px;
+}
+@media screen and (min-width: 480px) {
+  .footer__contact details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer-socials {
