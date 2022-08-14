@@ -703,6 +703,25 @@ section {
     color: #212121;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
 
 .clients__list {
   display: -webkit-box;
@@ -953,18 +972,18 @@ section {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe__link:hover, .subscribe__link:focus {
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .subscribe__icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .subscription {
@@ -1007,7 +1026,7 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1095,8 +1114,8 @@ section {
 }
 
 .subscription__btn {
-  background-color: #2196F3;
-  color: #FFFFFF;
+  background-color: #2196f3;
+  color: #ffffff;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -1214,7 +1233,7 @@ section {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,7 +1278,7 @@ section {
 }
 
 .subscribe__icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .filter {

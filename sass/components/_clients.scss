@@ -53,6 +53,20 @@
     letter-spacing: 0.03em;
     color: #212121;
   }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
 }
 
 .clients__list {
