@@ -38,12 +38,14 @@
       <a class="logo nav__logo" href="./index.html" lang="en"
         >Web<span class="nav__logo--black">Studio</span>
       </a>
-<button class="menu-btn "  type="button" data-menu-open><svg width="40" height="40"><use href="./images/icons.svg#bur-menu"></use></svg></button>
+<button class="mobile__open-btn "  type="button" data-menu-open><svg width="40" height="40"><use href="./images/icons.svg#bur-menu"></use></svg></button>
 
 <!-- modile-menu -->
-<div class="mobile is-hidden " data-menu >
+<div class="mobile-overlay is-hidden " data-menu >
 <div class="mobile-menu ">
-  <button class="menu-btn "  type="button" data-menu-close><svg width="40" height="40"><use href="./images/icons.svg#close-menu"></use></svg></button>
+   <button class="mobile__close-btn "  type="button" data-menu-close><svg width="40" height="40"><use href="./images/icons.svg#close-menu"></use></svg></button>
+  <div class="mobile__top">
+ 
   <ul class="mobile__list">
 <li class="mobile__item">
   <a href="./index.html" class="mobile_link link">Студия</a></li>
@@ -63,6 +65,7 @@
   </ul>
 </div>
 </div>
+</div>
       
         <ul class="nav__list list">
           <li class="nav__item">
@@ -77,7 +80,7 @@
       <!-- телефон та пошта -->
       <h2 hidden>contact</h2>
 
-      <ul class="contact list">
+      <ul class="contact__list">
         <li class="contact__item">
           <a href="mailto:info@devstudio.com"class="contact__link link"><svg class="contact__icon">
                             <use href="./images/icons.svg#envelope" width="16" height="16"></use>
