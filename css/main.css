@@ -110,7 +110,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.1923076923;
+  line-height: 1.2916666667;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
@@ -134,6 +134,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -153,6 +156,24 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.mobile__item {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #212121;
+  list-style-type: none;
+}
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile__open-btn {
@@ -202,6 +223,32 @@ img {
   padding: 0;
   outline: invert;
   font: inherit;
+}
+
+.mobile__current {
+  color: #2196f3;
+}
+
+.mobile-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .contact {
