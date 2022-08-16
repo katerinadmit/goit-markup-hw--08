@@ -1,5 +1,12 @@
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+  }
 }
 
 .footer__section {
@@ -59,14 +66,28 @@
   &:focus {
     color: var(--accent-txt-cl);
   }
-}
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
-}
 
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+// .footer__item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+.footer__list {
+  margin-bottom: 60px;
+}
 .subscribe {
-  display: block;
-  margin-left: 70px;
+  // display: block;
+  // margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .subscribe__link {
@@ -101,8 +122,8 @@
 .subscription {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
   padding: 0;
+  text-align: center;
 }
 
 .subscription__form {
@@ -112,7 +133,11 @@
 }
 
 .subscription__form-group {
+  // display: flex;
+  // align-items: center;
   display: flex;
+  flex-direction: column;
+  align-content: center;
   align-items: center;
 }
 
@@ -126,25 +151,37 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  display: block;
 }
 
 .subscription__input {
+  padding-left: 15px;
   background-color: transparent;
   min-height: 50px;
-  padding-left: 16px;
-  width: 358px;
-  margin-right: 12px;
+  width: 300px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: #ffffff;
+  // color: #ffffff;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 
   &:hover,
   &:focus {
     border-color: #2196f3;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
 }
 
@@ -192,6 +229,7 @@
   &:focus {
     background-color: #2485d4;
   }
+  margin-top: 20px;
 }
 
 // .subscription__btn:hover,
@@ -218,7 +256,8 @@
 
 .footer__distribution {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer__contact details {
@@ -252,6 +291,7 @@
   color: #ffffff;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .subscribe__list {
