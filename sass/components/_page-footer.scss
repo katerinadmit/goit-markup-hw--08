@@ -72,6 +72,7 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
+    // margin-left: 76px;
   }
 }
 // .footer__item:not(:last-child) {
@@ -88,6 +89,10 @@
   align-content: center;
   align-items: center;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
 }
 
 .subscribe__link {
@@ -119,6 +124,14 @@
 //     background-color: #2196F3;
 // }
 
+.footer__disperse {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
 .subscription {
   display: flex;
   flex-direction: column;
@@ -285,7 +298,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
