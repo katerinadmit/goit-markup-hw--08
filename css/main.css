@@ -231,6 +231,21 @@ img {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: auto;
+  }
+}
 
 .contact__icon {
   display: -webkit-box;
@@ -2022,6 +2037,16 @@ section {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 93px;
+    line-height: 1.19;
+    font-size: 26px;
+    margin-right: 0;
   }
 }
 

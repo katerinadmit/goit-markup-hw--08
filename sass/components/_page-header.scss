@@ -99,6 +99,12 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+  }
 }
 .contact__icon {
   display: flex;
