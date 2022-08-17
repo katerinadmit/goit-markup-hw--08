@@ -1442,6 +1442,7 @@ section {
 @media screen and (min-width: 1200px) {
   .subscription {
     margin-top: 0;
+    margin-left: 93px;
   }
 }
 
@@ -1475,7 +1476,6 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: 93px;
   }
 }
 
