@@ -2090,6 +2090,11 @@ section {
   max-width: 450px;
   max-height: 609px;
 }
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    max-width: none;
+  }
+}
 
 .modal-form-field {
   display: -webkit-box;
@@ -2106,6 +2111,7 @@ section {
 }
 
 .modal-title {
+  display: block;
   margin: 0;
   margin-bottom: 12px;
   font-weight: 700;

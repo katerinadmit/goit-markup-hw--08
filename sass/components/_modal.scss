@@ -83,6 +83,10 @@
   width: 100%;
   max-width: 450px;
   max-height: 609px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: none;
+  }
 }
 
 .modal-form-field {
@@ -95,7 +99,7 @@
 }
 
 .modal-title {
-  // display: block;
+  display: block;
   margin: 0;
   margin-bottom: 12px;
   font-weight: 700;
