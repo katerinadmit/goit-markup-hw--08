@@ -2043,6 +2043,12 @@ section {
   visibility: visible;
   pointer-events: initial;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 
 .modal-btn {
   display: -webkit-box;
