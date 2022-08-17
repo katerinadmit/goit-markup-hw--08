@@ -1,10 +1,10 @@
 .about {
   background-color: #f5f4fa;
 
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -30,14 +30,13 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-  }
+  // @media screen and (min-width: 480px) {
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  // }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -53,9 +52,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
+  // @media screen and (min-width: 480px) {
+  width: 100%;
+  // }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px * (2 - 1)) / 2);
@@ -86,10 +85,6 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 10px;
-  }
 }
 
 .about__info {
@@ -101,9 +96,9 @@
   color: #757575;
   margin-bottom: 16px;
 
-  @media screen and (min-width: 480px) {
-    margin: 16px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   margin: 16px;
+  // }
 }
 .socials {
   display: flex;
